@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.domain
+package com.amrubio27.mypokemoncard.pokemonCardOld.domain
 
 import androidx.compose.ui.graphics.Color
 
@@ -17,7 +17,7 @@ data class Pokemon(
     val debilidad: TipoPokemon? = null,
     val resistencia: TipoPokemon? = null,
     val costoRetirada: Int = 0,
-    
+
     // Recursos de imágenes locales (Resource IDs)
     val fondoResourceId: Int? = null, // Resource ID para el fondo de la carta
     val pokemonFondoResourceId: Int? = null, // Resource ID para el Pokémon de fondo
@@ -25,13 +25,13 @@ data class Pokemon(
     val marcoSvgResourceId: Int? = null, // Resource ID del SVG del marco
     val efectosBaseResourceId: Int? = null, // Resource ID para efectos base
     val efectosExtraResourceId: Int? = null, // Resource ID para efectos extra
-    
+
     // URLs para imágenes remotas (alternativo)
     val imagenPokemonFondo: String? = null, // URL para la parte de atrás
     val imagenPokemonDelante: String? = null, // URL para la parte de adelante
     val efectosBase: String? = null, // URL para efectos base
     val efectosExtra: String? = null, // URL para efectos extra
-    
+
     val colorDominante: Color = Color.Gray // Color dominante para el marco
 )
 
@@ -77,7 +77,7 @@ object CartaDimensiones {
     const val RATIO_CARTA = 6.3f / 8.8f // ~0.716
     const val ANCHO_DP = 252 // 6.3cm ≈ 252dp a 160dpi
     const val ALTO_DP = 352 // 8.8cm ≈ 352dp a 160dpi
-    
+
     // Proporciones para el recorte superior del marco
     const val RATIO_RECORTE_SUPERIOR = 0.4f // 40% del alto para el área del Pokémon
 }

@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.components
+package com.amrubio27.mypokemoncard.pokemonCardOld.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -40,7 +40,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.amrubio27.mypokemoncard.R
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Pokemon
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
 
 @Composable
 fun CapaUIDatos(

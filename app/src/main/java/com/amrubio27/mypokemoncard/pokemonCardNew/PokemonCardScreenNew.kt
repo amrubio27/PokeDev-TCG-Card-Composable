@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard
+package com.amrubio27.mypokemoncard.pokemonCardNew
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -8,23 +8,22 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Pokemon
-import com.amrubio27.mypokemoncard.pokemonCard.view.MyPokemonCard
+import com.amrubio27.mypokemoncard.pokemonCardNew.domain.Pokemon
+import com.amrubio27.mypokemoncard.pokemonCardNew.view.MyPokemonCardNew
 
 @Composable
-fun PokemonCardScreen(
+fun PokemonCardScreenNew(
     pokemon: Pokemon, modifier: Modifier = Modifier
 ) {
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFF2E2E2E)), // Fondo neutro oscuro
+            .background(Color(0xFF2E2E2E)),
         contentAlignment = Alignment.Center
     ) {
-        MyPokemonCard(
+        MyPokemonCardNew(
             pokemon = pokemon,
-            modifier = Modifier, // Margen para separar de los bordes
-            maxWidth = 320.dp // Aumentado para carta más grande en pantalla
+            maxWidth = 320.dp // Adjust as needed
         )
     }
 }

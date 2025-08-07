@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.components
+package com.amrubio27.mypokemoncard.pokemonCardNew.layers.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -21,10 +21,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Ataque
+import com.amrubio27.mypokemoncard.pokemonCardNew.domain.Ataque
 
 @Composable
- fun AtaqueUI(
+fun AttackUI(
     ataque: Ataque, textSize: TextUnit
 ) {
     Column(
@@ -35,8 +35,6 @@ import com.amrubio27.mypokemoncard.pokemonCard.domain.Ataque
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.padding(4.dp)
         ) {
-
-            // Iconos de costo (simplificado por ahora)
             ataque.costo.forEach { tipo ->
                 Box(
                     modifier = Modifier
@@ -66,17 +64,16 @@ import com.amrubio27.mypokemoncard.pokemonCard.domain.Ataque
             )
         }
 
-        if (ataque.descripcion.isNotEmpty()) {
-            Text(
-                text = ataque.descripcion,
-                fontSize = textSize * 0.8f,
-                color = Color.Black,
-                fontFamily = FontFamily.SansSerif,
-                textAlign = TextAlign.Start,
-                modifier = Modifier
-                    .padding(horizontal = 8.dp)
-                    .fillMaxWidth()
-            )
-        }
+        Text(
+            text = ataque.descripcion,
+            fontSize = textSize * 0.8f,
+            color = Color.Black,
+            fontFamily = FontFamily.SansSerif,
+            textAlign = TextAlign.Start,
+            modifier = Modifier
+                .padding(horizontal = 8.dp)
+                .fillMaxWidth()
+        )
+
     }
 }
