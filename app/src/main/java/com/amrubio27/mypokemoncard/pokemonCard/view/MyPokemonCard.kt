@@ -186,7 +186,12 @@ fun MyPokemonCard(
         )
 
         // Capa 4: UI de datos (sin paralaje, última para estar por encima)
-        CapaUIDatos(
+        /*CapaUIDatos(
+            pokemon = pokemon,
+            modifier = Modifier.fillMaxSize(),
+            cartaAncho = cartaAncho
+        )*/
+        CapaUISimplified(
             pokemon = pokemon,
             modifier = Modifier.fillMaxSize(),
             cartaAncho = cartaAncho
