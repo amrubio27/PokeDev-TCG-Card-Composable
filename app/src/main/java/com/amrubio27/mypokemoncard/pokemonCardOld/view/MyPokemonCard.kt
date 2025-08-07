@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.view
+package com.amrubio27.mypokemoncard.pokemonCardOld.view
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
@@ -21,16 +21,15 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaEfectosBase
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaEfectosExtra
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaFondo
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaMarco
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaPokemonDelante
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaPokemonFondo
-import com.amrubio27.mypokemoncard.pokemonCard.components.CapaUIDatos
-import com.amrubio27.mypokemoncard.pokemonCard.simplified.CapaUISimplified
-import com.amrubio27.mypokemoncard.pokemonCard.domain.CartaDimensiones
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Pokemon
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaEfectosBase
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaEfectosExtra
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaFondo
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaMarco
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaPokemonDelante
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaPokemonFondo
+import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaUIDatos
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.CartaDimensiones
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
 import kotlinx.coroutines.launch
 import kotlin.math.abs
 import kotlin.math.max
@@ -57,10 +56,9 @@ fun MyPokemonCard(
     val rotacionY = remember { Animatable(0f) }
     val escala = remember { Animatable(1f) }
 
-    // Scope de corrutinas de Compose
     val coroutineScope = rememberCoroutineScope()
 
-    // Límites de rotación (en grados) - Aumentados para más dramatismo
+    // Límites de rotación (en grados)
     val maxRotacion = 30f
 
     // Función para calcular el offset de paralaje según la profundidad de la capa
@@ -128,7 +126,7 @@ fun MyPokemonCard(
             rotationY = rotacionY.value,
             scaleX = escala.value,
             scaleY = escala.value,
-            cameraDistance = 8f * density.density // Reducido para perspectiva más dramática
+            cameraDistance = 8f * density.density // Distancia de la cámara para el efecto 3D
         )
         .clip(RoundedCornerShape(12.dp)), contentAlignment = Alignment.Center) {
 
@@ -186,12 +184,7 @@ fun MyPokemonCard(
         )
 
         // Capa 4: UI de datos (sin paralaje, última para estar por encima)
-        /*CapaUIDatos(
-            pokemon = pokemon,
-            modifier = Modifier.fillMaxSize(),
-            cartaAncho = cartaAncho
-        )*/
-        CapaUISimplified(
+        CapaUIDatos(
             pokemon = pokemon,
             modifier = Modifier.fillMaxSize(),
             cartaAncho = cartaAncho

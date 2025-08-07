@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.components
+package com.amrubio27.mypokemoncard.pokemonCardOld.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -10,28 +10,28 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Pokemon
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
 
 @Composable
-fun CapaPokemonDelante(
+fun CapaEfectosBase(
     pokemon: Pokemon, modifier: Modifier = Modifier
 ) {
     Box(
         modifier = modifier.fillMaxSize()
     ) {
         // Prioridad 1: Imagen de recurso local
-        pokemon.pokemonDelanteResourceId?.let { resourceId ->
+        pokemon.efectosBaseResourceId?.let { resourceId ->
             Image(
                 painter = painterResource(id = resourceId),
-                contentDescription = "Pokémon delante",
+                contentDescription = "Efectos base",
                 modifier = Modifier
                     .fillMaxSize()
                     .clip(RoundedCornerShape(12.dp)), // Puede usar todo el espacio hasta el borde de la carta
-                contentScale = ContentScale.Fit
+                contentScale = ContentScale.FillBounds,
+                alpha = 1f // Efectos semi-transparentes
             )
-        } ?: pokemon.imagenPokemonDelante?.let { imagenUrl ->
+        } ?: pokemon.efectosBase?.let { efectosUrl ->
             // Prioridad 2: URL remota (aquí iría la carga con Coil o similar)
-            // Placeholder por ahora
         }
     }
 }

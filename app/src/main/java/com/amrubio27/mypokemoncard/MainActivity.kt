@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.amrubio27.mypokemoncard.pokemonCard.EjemploPokemonCard
+import com.amrubio27.mypokemoncard.pokemonCardNew.ExamplePokemonCardNew
 import com.amrubio27.mypokemoncard.ui.theme.MyPokemonCardTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyPokemonCardTheme {
-                EjemploPokemonCard()
+                ExamplePokemonCardNew()
             }
         }
     }

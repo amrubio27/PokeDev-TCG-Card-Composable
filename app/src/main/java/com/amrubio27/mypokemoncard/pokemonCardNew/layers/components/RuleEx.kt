@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.components
+package com.amrubio27.mypokemoncard.pokemonCardNew.layers.components
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box

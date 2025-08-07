@@ -1,10 +1,10 @@
-package com.amrubio27.mypokemoncard.pokemonCard
+package com.amrubio27.mypokemoncard.pokemonCardOld
 
 import androidx.compose.runtime.Composable
 import com.amrubio27.mypokemoncard.R
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Ataque
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Pokemon
-import com.amrubio27.mypokemoncard.pokemonCard.domain.TipoPokemon
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Ataque
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.TipoPokemon
 
 @Composable
 fun EjemploPokemonCard() {

@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCard.components
+package com.amrubio27.mypokemoncard.pokemonCardOld.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,8 +22,8 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.amrubio27.mypokemoncard.R
-import com.amrubio27.mypokemoncard.pokemonCard.domain.CartaDimensiones
-import com.amrubio27.mypokemoncard.pokemonCard.domain.Pokemon
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.CartaDimensiones
+import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
 
 @Composable
  fun CapaMarco(
