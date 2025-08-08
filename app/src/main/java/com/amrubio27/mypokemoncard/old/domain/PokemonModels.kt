@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCardOld.domain
+package com.amrubio27.mypokemoncard.old.domain
 
 import androidx.compose.ui.graphics.Color
 

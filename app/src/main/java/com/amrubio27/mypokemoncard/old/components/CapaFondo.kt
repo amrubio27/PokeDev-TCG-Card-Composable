@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCardOld.components
+package com.amrubio27.mypokemoncard.old.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
+import com.amrubio27.mypokemoncard.old.domain.Pokemon
 
 @Composable
 fun CapaFondo(

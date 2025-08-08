@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCardOld
+package com.amrubio27.mypokemoncard.old
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -8,8 +8,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
-import com.amrubio27.mypokemoncard.pokemonCardOld.view.MyPokemonCard
+import com.amrubio27.mypokemoncard.old.domain.Pokemon
+import com.amrubio27.mypokemoncard.old.view.MyPokemonCard
 
 @Composable
 fun PokemonCardScreen(

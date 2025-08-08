@@ -1,4 +1,4 @@
-package com.amrubio27.mypokemoncard.pokemonCardOld.view
+package com.amrubio27.mypokemoncard.old.view
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
@@ -21,15 +21,15 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaEfectosBase
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaEfectosExtra
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaFondo
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaMarco
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaPokemonDelante
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaPokemonFondo
-import com.amrubio27.mypokemoncard.pokemonCardOld.components.CapaUIDatos
-import com.amrubio27.mypokemoncard.pokemonCardOld.domain.CartaDimensiones
-import com.amrubio27.mypokemoncard.pokemonCardOld.domain.Pokemon
+import com.amrubio27.mypokemoncard.old.components.CapaEfectosBase
+import com.amrubio27.mypokemoncard.old.components.CapaEfectosExtra
+import com.amrubio27.mypokemoncard.old.components.CapaFondo
+import com.amrubio27.mypokemoncard.old.components.CapaMarco
+import com.amrubio27.mypokemoncard.old.components.CapaPokemonDelante
+import com.amrubio27.mypokemoncard.old.components.CapaPokemonFondo
+import com.amrubio27.mypokemoncard.old.components.CapaUIDatos
+import com.amrubio27.mypokemoncard.old.domain.CartaDimensiones
+import com.amrubio27.mypokemoncard.old.domain.Pokemon
 import kotlinx.coroutines.launch
 import kotlin.math.abs
 import kotlin.math.max
