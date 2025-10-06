@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DevelopersTCG</string>
+
+    <!-- Strings -->
+    <string name="ui_hp">HP</string>
+    <string name="ui_weakness">Weakness</string>
+    <string name="ui_strength">Strength</string>
 </resources>

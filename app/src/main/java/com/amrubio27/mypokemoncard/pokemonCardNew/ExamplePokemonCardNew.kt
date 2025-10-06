@@ -27,8 +27,8 @@ fun ExamplePokemonCardNew() {
                 descripcion = "Learns new technologies quickly"
             )
         ),
-        debilidad = "Lunes/Presencial", // Weakness: Mondays and in-person work
-        resistencia = "Curiosidad/TeamWork", // Resistance: Curiosity and Team Work
+        debilidad = "Monday/In-person", // Weakness: Mondays and in-person work
+        resistencia = "Curiosity/TeamWork", // Resistance: Curiosity and Team Work
         marcoSvgResourceId = R.drawable.marcocarta__1_,
         pokemonFondoResourceId = R.drawable.perreteatras,
         pokemonDelanteResourceId = R.drawable.perretedelante3,

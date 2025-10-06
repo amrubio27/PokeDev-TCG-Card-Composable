@@ -27,6 +27,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -70,7 +71,7 @@ fun UISimplifiedLayer(
 
             Text(
                 modifier = Modifier.offset(y = 3.dp, x = 2.dp),
-                text = "HP",
+                text = stringResource(R.string.ui_hp),
                 fontSize = (cartaAncho.value / 28).sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
@@ -144,7 +145,7 @@ fun UISimplifiedLayer(
                     modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "Debilidad",
+                        text = stringResource(R.string.ui_weakness),
                         fontSize = (cartaAncho.value / 35).sp,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onSurface,
@@ -186,7 +187,7 @@ fun UISimplifiedLayer(
                 ) {
 
                     Text(
-                        text = "Fuerte",
+                        text = stringResource(R.string.ui_strength),
                         fontSize = (cartaAncho.value / 35).sp,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onSurface,

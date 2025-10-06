@@ -15,7 +15,7 @@ data class Pokemon(
     val debilidad: String = "Nothing",
     val resistencia: String = "Nothing",
 
-    // Recursos de imágenes locales
+    // Local resources for the card
     val fondoResourceId: Int? = null, // Resource ID para el fondo de la carta
     val pokemonFondoResourceId: Int? = null, // Resource ID para el Pokémon de fondo
     val pokemonDelanteResourceId: Int? = null, // Resource ID para el Pokémon de adelante
@@ -50,7 +50,7 @@ enum class TipoPokemon(val nombreEs: String, val color: Color) {
     CUSTOM(
         "Custom",
         Color(0xFF00FFB0).copy(alpha = 0.5f)
-    ) // Tipo personalizado para desarrolladores
+    )
 }
 
 /**
@@ -70,7 +70,7 @@ object CartaDimensiones {
     const val RATIO_CARTA = 6.3f / 8.8f // ~0.716
     const val ANCHO_DP = 252 // 6.3cm ≈ 252dp a 160dpi
     const val ALTO_DP = 352 // 8.8cm ≈ 352dp a 160dpi
-    
-    // Proporciones para el recorte superior del marco
-    const val RATIO_RECORTE_SUPERIOR = 0.4f // 40% del alto para el área del Pokémon
+
+    // Proportions for Pokémon area
+    const val RATIO_RECORTE_SUPERIOR = 0.4f // 40% for top cut
 }
